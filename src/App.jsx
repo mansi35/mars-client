@@ -4,11 +4,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Auth from './components/Auth/Auth';
 import Home from './pages/Home/Home';
+
 import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
+
+import MarsMenu from './pages/MarsMenuPage/MarsMenu';
 import useAlan from "./hooks/useAlan"
 import Profile from './pages/Profile/Profile';
+import ProfileDetails from './pages/Profile/Profile';
+
 
 
 function App() {
@@ -29,7 +34,8 @@ function App() {
               <Route exact path="/cart" element={<CartPage />} />
               <Route exact path="/cuisines" element={<CuisineSelector />} />
               <Route exact path="/menu" element={<MenuPage />} />
-              <Route exact path="/profile" element={<Profile />} />
+              <Route exact path="/marsmenu" element={<MarsMenu />} />
+              <Route exact path="/profile" element={<ProfileDetails />} />
             </Routes>
           </div>
         </div>

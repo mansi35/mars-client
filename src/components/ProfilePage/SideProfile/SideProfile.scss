@@ -1,0 +1,76 @@
+.sideProfile{
+    height: max-content;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.187);
+    box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+        .sideProfile__content{
+            padding: 20px;
+            display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+            gap:10px;
+        .sideProfile__top{
+            background: #043263;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+                align-items: center;
+            h1{
+                margin: 15px;
+                color: #FFFFFF;
+            }
+        }
+        .sideProfile__bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+                    gap:5px;
+            .sideProfile__name{
+                h4{
+                  
+                    color: #c7c7c7;
+                    margin: 0px;
+                }
+                h6{
+                    
+                    color: #A1A1A1;
+                    margin: 0px;
+                }
+            }
+            .sideProfile__profile{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 7px;
+                gap: 5px;
+                cursor:pointer;
+                svg{
+                    color: #A1A1A1;
+                }
+                h6{
+                    color: #A1A1A1;
+                    margin: 0px;
+                }
+            }
+            .sideProfile__logout{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 7px;
+                gap: 5px;
+                cursor:pointer;
+                svg{
+                    color: #DC2626;
+                }
+                h6{
+                    color: #DC2626;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

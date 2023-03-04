@@ -5,6 +5,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from '@mui/icons-material/Search';
 import "./Header.scss";
 import Auth from "../Auth/Auth";
+import logo from "../../assets/Logo.png"
 
 function Header() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -13,7 +14,7 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        App Logo
+        <img src={logo} alt="" />
       </div>
       <div className="search-bar">
         <input type="text" />
