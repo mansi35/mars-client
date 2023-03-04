@@ -38,7 +38,7 @@ function App() {
               <Route exact path="/profile" element={<ProfileDetails />} />
             </Routes>
           </div>
-        </div>
+        </div> 
       </div>
     </Router>
   );
