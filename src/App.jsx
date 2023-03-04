@@ -4,11 +4,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Auth from './components/Auth/Auth';
 import Home from './pages/Home/Home';
-
 import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
-
 import MarsMenu from './pages/MarsMenuPage/MarsMenu';
 import useAlan from "./hooks/useAlan"
 import ProfileDetails from './pages/Profile/Profile';
