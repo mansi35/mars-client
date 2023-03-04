@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 
 import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
+import MenuPage from './pages/MenuPage/MenuPage';
 
 
 
@@ -22,6 +23,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route exact path="/cart" element={<CartPage />} />
               <Route exact path="/cuisines" element={<CuisineSelector />} />
+              <Route exact path="/menu" element={<MenuPage />} />
             </Routes>
           </div>
         </div>
