@@ -23,7 +23,7 @@ const CartPage = () => {
           <CardCart />
         </div>
         <div className="payment-div">
-          <button className="pay-btn">Proceed to Pay</button>
+          <button className="pay-btn">PROCEED TO PAY</button>
         </div>
       </div>
     </ThemeProvider>
