@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
+import Rocket from './components/Rocket/Rocket';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Routes>
               <Route exact path="/auth" element={<Auth />} />
               <Route exact path="/" element={<Home />} />
+              <Route exact path="/rocket" element={<Rocket />} />
               <Route exact path="/cart" element={<CartPage />} />
               <Route exact path="/cuisines" element={<CuisineSelector />} />
               <Route exact path="/menu" element={<MenuPage />} />
