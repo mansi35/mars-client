@@ -1,0 +1,155 @@
+.loginDetails{
+    height: max-content;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    .loginDetails__content{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:10px;
+        .loginDetails__contenthead{
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+            .loginDetails__profile{
+                display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:5px;
+                h4{
+                    color: #1A1A1A;
+                    margin: 0;
+                }
+                h6{
+                    color: #A1A1A1;
+                    margin: 0;
+                }
+            }
+
+        }
+        .loginDetails__seperator{
+            border: 1px solid #DDDDDD;
+        }
+        .loginDetails__name{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .loginDetails__fields__content{
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px;
+            h6{
+                color: #A1A1A1;
+                margin: 0;
+                font-size: 14px;
+            }
+            p{
+                margin: 0;
+                font-size: 14px;
+                color: #1A1A1A;
+            }
+        }
+        }
+        .loginDetails__fields{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: #239EFE;
+                margin: 0;
+                font-size: 12px;
+            }
+            @media (max-width: 600px) {
+                flex-wrap: wrap;
+                gap:10px;
+              }
+            .loginDetails__fields__content{
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 180px;
+            
+            h6{
+                color: #A1A1A1;
+                margin: 0;
+                font-size: 14px;
+            }
+            .loginDetails__add{
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap:5px;
+            h6{
+                margin: 0;
+                font-size: 14px;
+                color: #1A1A1A;
+            }
+            p{
+                color: #239EFE;
+                margin: 0;
+                font-size: 12px;
+            }
+            }
+        }
+        }
+        .loginDetails__emails{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: #239EFE;
+                margin: 0;
+                font-size: 12px;
+            }
+            @media (max-width: 600px) {
+                flex-wrap: wrap;
+                gap:10px;
+              }
+            .loginDetails__emails__content{
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 350px;
+            @media (max-width: 370px) {
+                flex-wrap: wrap;
+                gap:10px;
+                width: 100%;
+              }
+            h6{
+                color: #A1A1A1;
+                margin: 0;
+                font-size: 14px;
+            }
+            .loginDetails__add{
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap:5px;
+            h6{
+                margin: 0;
+                font-size: 14px;
+                color: #1A1A1A;
+            }
+            p{
+                color: #239EFE;
+                margin: 0;
+                font-size: 12px;
+            }
+            }
+        }
+        }
+    }
+}
