@@ -59,15 +59,15 @@ function Home() {
         <div class="solar_systm">
           <div class="planet venus">
             <div class='moon deimos'>
-              <h3 style={{fontWeight: "500"}}>Moon</h3>
+              <h3 style={{ fontWeight: "500" }}>Moon</h3>
               <h2>Deimos</h2>
-              <p style={{fontSize: "30px"}}>Earth cuisine</p>
+              <p style={{ fontSize: "30px" }}>Earth cuisine</p>
             </div>
             <div class='trajectory d'></div>
             <div class='moon phoebos'>
-              <h3 style={{fontWeight: "500"}}>Moon</h3>
+              <h3 style={{ fontWeight: "500" }}>Moon</h3>
               <h2>Phoebos</h2>
-              <p style={{fontSize: "30px"}}>Mars cuisine</p>
+              <p style={{ fontSize: "30px" }}>Mars cuisine</p>
             </div>
             <div class='trajectory p'></div>
             <div class="planet_description mars">
