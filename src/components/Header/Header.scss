@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+    padding: 20px;
+    font-weight: 300;
+    letter-spacing: 1.55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    .icons{
+        display: flex;
+        gap: 10px;
+    }
+
+    .icon{
+        font-weight: 300;
+        font-size: 28px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
