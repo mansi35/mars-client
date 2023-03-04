@@ -17,10 +17,13 @@ function Rocket() {
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+                <p>Name</p>
+                <p>Description</p>
+                <p>Calories</p>
+                <p>Add to Cart</p>
+            </li>
+
         </ul>
         <ul class="star">
             <li></li>
