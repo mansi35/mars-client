@@ -5,11 +5,11 @@ import 'react-multi-carousel/lib/styles.css';
 import MenuItem from '../../components/MenuItem/MenuItem';
 import { productData, responsive } from "../../components/MenuItem/data";
 import Rocket from '../../components/Rocket/Rocket';
-import './MenuPage.scss';
+import '../MenuPage/MenuPage.scss';
 
 // import Menucard from '../../components/Menucard/Menucard';
 
-function MenuPage() {
+function MarsMenu() {
 
     const product = productData.map((item) => (
         <MenuItem
@@ -32,10 +32,12 @@ function MenuPage() {
         <div>
             <Rocket />
         </div>
-
+        <div className='menucard'>
+            {/* <Menucard /> */}
+        </div>
 
     </div>
   )
 }
 
-export default MenuPage
+export default MarsMenu
