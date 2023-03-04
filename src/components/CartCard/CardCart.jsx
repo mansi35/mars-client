@@ -21,11 +21,7 @@ const CardCart = () => {
       return prev - 1;
     });
   }
-  const { removeFromCart } = useCart()
-
-  function removeItem({ entry }) {
-    removeFromCart(entry.itemId)
-  }
+  
   return (
     <div className="cartCard">
       <div className="imgs-details">
