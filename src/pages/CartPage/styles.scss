@@ -2,13 +2,28 @@
   z-index: 9999999;
   min-height: 100vh;
   width: 100vw;
-  padding: 10%;
+  padding: 7%;
+  padding-right: 10%;
+  padding-left: 10%;
   box-sizing: border-box;
   background-color: black;
   color: white;
   font-weight: 300;
   letter-spacing: 1.25px;
-  font-size: 20px;
+  font-size: 16px;
+//   @keyframes glowing {
+//     from {
+//       box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+//     }
+//     to {
+//       box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+//     }
+//   }
+  
+//   animation: glowing 1s ease-in-out infinite alternate;
+  
+  
+  
   * {
     box-sizing: border-box;
     padding: 0;
@@ -18,13 +33,49 @@
   .cart-items {
     border-radius: 10px;
     padding: 20px;
+    max-height: 400px;
+    overflow: auto;
     height: 100%;
     background-color: rgba(255, 0, 47, 0.231);
     background-color: rgba(141, 56, 44, 0.35);
     backdrop-filter: blur(5px);
   }
 
-  .price {
-    font-size: 16px;
+  .payment{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    backdrop-filter: blur(5px);
+    margin-top: 2%;
   }
+
+  .payment-div{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pay-btn{
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 2%;
+    border-bottom: 2px solid white;
+    backdrop-filter: blur(1px);
+    padding: 0;
+    transition: all .3s ease;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+
+    &:hover{
+       margin-left: 0;
+       margin-right: 0;
+       padding:0 5px;
+    }
+  }
+
 }
