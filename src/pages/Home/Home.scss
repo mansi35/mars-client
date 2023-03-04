@@ -9,7 +9,9 @@
   //overflow: hidden;
 }
 
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   -webkit-user-select: none;
@@ -154,6 +156,37 @@
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 4px;
+}
+.home .solar_systm .planet.venus .moon h3 {
+  color: #e55f45;
+}
+.home .solar_systm .planet.venus .deimos {
+  left: 900px;
+  top: -100px;
+  transform: scale(0.45);
+  background: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg");
+  z-index: -3;
+  box-shadow: 0px -30px 30px 10px black inset;
+}
+// .home .solar_systm .planet.venus .trajectory.d {
+//   width: 1770px;
+//   height: 1770px;
+//   left: -317px;
+//   top: -110px;
+// }
+// .home .solar_systm .planet.venus .trajectory.p {
+//   width: 1600px;
+//   height: 1600px;
+//   left: -200px;
+//   top: -160px;
+// }
+.home .solar_systm .planet.venus .phoebos {
+  left: 100px;
+  top: -160px;
+  transform: scale(0.5);
+  background: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg");
+  z-index: -3;
+  box-shadow: 0px -30px 30px 10px black inset;
 }
 .home .logo span {
   font-size: 12px;
