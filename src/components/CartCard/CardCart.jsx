@@ -30,7 +30,6 @@ const CardCart = ({ Aslots }) => {
     });
   }
 
-  console.log(Aslots);
 
   return (
     <div className="cartCard">

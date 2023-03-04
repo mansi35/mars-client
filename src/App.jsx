@@ -12,16 +12,18 @@ import useAlan from "./hooks/useAlan"
 import Profile from './pages/Profile/Profile';
 import ProfileDetails from './pages/Profile/Profile';
 
-
-
 function App() {
   // useAlan()
   const Alan = () => {
     useAlan();
     return null;
   }
+
+  
+
   return (
     <Router>
+
       <div className="App">
         <div className="App__header">
           <Header />
