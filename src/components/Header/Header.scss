@@ -23,4 +23,23 @@
             cursor: pointer;
         }
     }
+    .search-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+            width: 50vw;
+            background-color: rgb(22, 22, 22);
+            border:none;
+            height: 28px;
+            border-radius: 5px;
+            color: white;
+        }
+        .icon{
+            margin-left: 10px;
+        }
+    }
+    .invisible{
+        display: none;
+    }
 }
