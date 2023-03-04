@@ -8,9 +8,10 @@ import Home from './pages/Home/Home';
 import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
+
+import MarsMenu from './pages/MarsMenuPage/MarsMenu';
 import useAlan from "./hooks/useAlan"
 import ProfileDetails from './pages/Profile/Profile';
-
 
 
 
@@ -33,6 +34,7 @@ function App() {
               <Route exact path="/cart" element={<CartPage />} />
               <Route exact path="/cuisines" element={<CuisineSelector />} />
               <Route exact path="/menu" element={<MenuPage />} />
+              <Route exact path="/marsmenu" element={<MarsMenu />} />
               <Route exact path="/profile" element={<ProfileDetails />} />
             </Routes>
 
