@@ -3,7 +3,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MenuItem from '../../components/MenuItem/MenuItem';
-import { productData, responsive } from "../../components/MenuItem/data";
+import { productData, responsive } from "../../components/MenuItem/EarthDataItems";
 import Rocket from '../../components/Rocket/Rocket';
 import './MenuPage.scss';
 

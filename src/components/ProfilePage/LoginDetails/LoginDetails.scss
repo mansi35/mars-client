@@ -1,7 +1,7 @@
 .loginDetails{
     height: max-content;
     width: 100%;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.187);
     box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     .loginDetails__content{
@@ -21,7 +21,7 @@
         justify-content: space-between;
         gap:5px;
                 h4{
-                    color: #1A1A1A;
+                    color: #c7c7c7;
                     margin: 0;
                 }
                 h6{
@@ -53,7 +53,7 @@
             p{
                 margin: 0;
                 font-size: 14px;
-                color: #1A1A1A;
+                color: #c4c4c4;
             }
         }
         }
@@ -92,7 +92,7 @@
             h6{
                 margin: 0;
                 font-size: 14px;
-                color: #1A1A1A;
+                color: #c5c5c5;
             }
             p{
                 color: #239EFE;
@@ -141,7 +141,7 @@
             h6{
                 margin: 0;
                 font-size: 14px;
-                color: #1A1A1A;
+                color: #c7c7c7;
             }
             p{
                 color: #239EFE;

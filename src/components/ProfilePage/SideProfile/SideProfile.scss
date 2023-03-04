@@ -1,7 +1,7 @@
 .sideProfile{
     height: max-content;
     width: 100%;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.187);
     box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
         .sideProfile__content{
@@ -30,7 +30,7 @@
             .sideProfile__name{
                 h4{
                   
-                    color: #1A1A1A;
+                    color: #c7c7c7;
                     margin: 0px;
                 }
                 h6{

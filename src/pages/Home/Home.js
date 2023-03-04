@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 //import starsVideo from "../../assets/stars-19289.mp4";
 import "./Home.scss";
 
@@ -47,7 +47,10 @@ function Home() {
               {/* <h2>Planet</h2> */}
               <h1>Earth</h1>
               <p>
-                Click on Mars to launch
+                This is Earth, this is your home. But, it's the year 2050 and humans have colonized Mars.
+                Fly to Mars with us and try the wide variety of exotic cuisines Dawat E Mars has to offer.
+                <br/>
+                <span style={{fontWeight: "500", fontSize: "15px"}}>Click on Mars and experience the immersive journey.</span>
               </p>
             </div>
             <div class="overlay"></div>
@@ -68,10 +71,11 @@ function Home() {
             </div>
             <div class='trajectory p'></div>
             <div class="planet_description mars">
-              <h2>Planet</h2>
+              <h1>Welcome to</h1>
               <h1>Mars</h1>
               <p>
-                Checkout out our dishes
+                We value diversity, that's why we offer cuisines for both Earth and Mars dwellers.
+                You can try our exotic cuisines and also mix them up!
               </p>
             </div>
             <div class="overlay"></div>
