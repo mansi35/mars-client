@@ -1,7 +1,26 @@
 .cuisineSelector {
-  h1 {
+  .cuisineSelector__content {
+    width: 80%;
+    margin: auto;
+  }
+
+  .cuisineSelector__background {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: absolute;
+    // background: linear-gradient(90deg, #1A1A1A 12.41%, rgba(26, 26, 26, 0.9) 43.09%, rgba(26, 26, 26, 0) 136.66%);
+  }
+
+  .slick-slide {
+    margin: 10px;
+  }
+
+  .slick-slider {
     z-index: 2;
-    position: relative;
-    color: #fff;
+    height: 420px;
+  }
+
+  .slick-list {
+    height: -webkit-fill-available;
   }
 }
