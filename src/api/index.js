@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({ baseURL: 'http://localhost:5000' });
+const MLAPI = axios.create({ baseURL: 'https://comfort-food-predictor.onrender.com/food' })
 // const API = axios.create({ baseURL: 'https://gosafejourney-server.onrender.com' });
 
 API.interceptors.request.use((req) => {
@@ -12,3 +13,5 @@ API.interceptors.request.use((req) => {
 
 export const signIn = (formData) => API.post('/user/signin', formData);
 export const signUp = (formData) => API.post('/user/signup', formData);
+
+export const getMenuSuggestion = (mood) => MLAPI.get(`/${mood}`);

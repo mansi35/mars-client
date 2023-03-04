@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { getMenuSuggestion } from '../api';
 
 const UseAlan = () => {
   const navigatePath = useNavigate();
@@ -21,13 +22,23 @@ const UseAlan = () => {
     }
   }, [alanInstance])
 
+  const predict = useCallback((payload) => {
+    const suggestions = getMenuSuggestion(payload);
+    console.log(suggestions)
+    alanInstance.playText(`Here are some suggestions based on your mood that you can try, first one is ${suggestions[0]}, second one is ${suggestions[1]} and third one is ${suggestions[2]}`);
+  }, [alanInstance])
+
+
+
   useEffect(() => {
     window.addEventListener("navigate", navigate);
+    window.addEventListener("comfort-food", predict);
 
     return () => {
       window.removeEventListener("navigate", navigate);
+      window.removeEventListener("comfort-food", predict);
     }
-  }, [navigate]);
+  }, [navigate, predict]);
 
   useEffect(() => {
     if (alanInstance != null) return;
