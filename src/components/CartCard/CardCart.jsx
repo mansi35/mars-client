@@ -1,14 +1,22 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import IconButton from "@mui/material/IconButton";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
-
-import { useCart } from '../../context/CartContext'
+import MenuItem from "@mui/material/MenuItem";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { useCart } from "../../context/CartContext";
 import marsRestaurant from "../../images/marsRestaurant.jpg";
 import "./styles.scss";
 
-const CardCart = () => {
+const CardCart = ({ Aslots }) => {
   const [quantity, setQuantity] = useState(0);
+  const [slot, setSlot] = useState(1);
+
+  const handleChange = (event) => {
+    setSlot(event.target.value);
+  };
 
   function increaseQty() {
     setQuantity((prev) => {
@@ -21,7 +29,9 @@ const CardCart = () => {
       return prev - 1;
     });
   }
-  
+
+  console.log(Aslots);
+
   return (
     <div className="cartCard">
       <div className="imgs-details">
@@ -40,7 +50,22 @@ const CardCart = () => {
           </div>
         </div>
       </div>
-      <div className="qty-price"><p>$800</p></div>
+      <div className="qty-price">
+        <p>$800</p>
+        {Aslots!=="1" && <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+          <InputLabel id="demo-simple-select-filled-label">Slot</InputLabel>
+          <Select
+            labelId="demo-simple-select-filled-label"
+            id="demo-simple-select-filled"
+            value={slot}
+            onChange={handleChange}
+          >
+            {Aslots.split("").map((item) => (
+              <MenuItem value={item}>{item}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>}
+      </div>
     </div>
   );
 };
