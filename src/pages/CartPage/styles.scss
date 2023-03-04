@@ -1,0 +1,19 @@
+.cartpage{
+    z-index: 9999999;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 10%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+
+    .cart-items{
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+        background-color: rgba(255, 0, 47, 0.231);
+        backdrop-filter: blur(1px);
+    }
+
+    
+}
