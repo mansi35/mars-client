@@ -7,13 +7,20 @@ import Home from './pages/Home/Home';
 import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
+import useAlan from "./hooks/useAlan"
 
 function App() {
+  // useAlan()
+  const Alan = () => {
+    useAlan();
+    return null;
+  }
   return (
     <Router>
       <div className="App">
         <div className="App__header">
           <Header />
+          <Alan />
           <div className="App__content">
             <Routes>
               <Route exact path="/auth" element={<Auth />} />
@@ -22,6 +29,7 @@ function App() {
               <Route exact path="/cuisines" element={<CuisineSelector />} />
               <Route exact path="/menu" element={<MenuPage />} />
             </Routes>
+
           </div>
         </div>
       </div>
