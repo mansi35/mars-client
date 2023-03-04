@@ -8,6 +8,7 @@ import CuisineSelector from './pages/CuisineSelector/CuisineSelector';
 import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
 import useAlan from "./hooks/useAlan"
+import Profile from './pages/Profile/Profile';
 
 
 function App() {
@@ -24,13 +25,12 @@ function App() {
           <Alan />
           <div className="App__content">
             <Routes>
-              <Route exact path="/auth" element={<Auth />} />
               <Route exact path="/" element={<Home />} />
               <Route exact path="/cart" element={<CartPage />} />
               <Route exact path="/cuisines" element={<CuisineSelector />} />
               <Route exact path="/menu" element={<MenuPage />} />
+              <Route exact path="/profile" element={<Profile />} />
             </Routes>
-
           </div>
         </div>
       </div>
