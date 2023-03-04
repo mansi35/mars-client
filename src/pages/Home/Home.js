@@ -1,5 +1,5 @@
 import React from "react";
-import starsVideo from "../../assets/stars-19289.mp4";
+//import starsVideo from "../../assets/stars-19289.mp4";
 import "./Home.scss";
 
 function Home() {

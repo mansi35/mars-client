@@ -1,19 +1,30 @@
-.cartpage{
-    z-index: 9999999;
-    min-height: 100vh;
-    width: 100vw;
-    padding: 10%;
+.cartpage {
+  z-index: 9999999;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10%;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.25px;
+  font-size: 20px;
+  * {
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    padding: 0;
+    margin: 0;
+  }
 
-    .cart-items{
-        border-radius: 10px;
-        padding: 20px;
-        height: 100%;
-        background-color: rgba(255, 0, 47, 0.231);
-        backdrop-filter: blur(1px);
-    }
+  .cart-items {
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    background-color: rgba(255, 0, 47, 0.231);
+    background-color: rgba(141, 56, 44, 0.35);
+    backdrop-filter: blur(5px);
+  }
 
-    
+  .price {
+    font-size: 16px;
+  }
 }
