@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     padding: 20px;
     font-weight: 300;
@@ -7,39 +7,38 @@
     justify-content: space-between;
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 1000;
     box-sizing: border-box;
-
-    .icons{
+    .icons {
         display: flex;
         gap: 10px;
     }
-
-    .icon{
+    .icon {
         font-weight: 300;
         font-size: 28px;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
-    .search-bar{
+    .search-bar {
         display: flex;
         align-items: center;
         justify-content: center;
-        input{
+        input {
             width: 50vw;
             background-color: rgb(22, 22, 22);
-            border:none;
+            border: none;
             height: 28px;
             border-radius: 5px;
             color: white;
         }
-        .icon{
+        .icon {
             margin-left: 10px;
         }
     }
-    .invisible{
+    .invisible {
         display: none;
     }
 }

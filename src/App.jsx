@@ -9,6 +9,7 @@ import CartPage from './pages/CartPage/CartPage';
 import MenuPage from './pages/MenuPage/MenuPage';
 import useAlan from "./hooks/useAlan"
 
+
 function App() {
   // useAlan()
   const Alan = () => {

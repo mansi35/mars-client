@@ -4,7 +4,10 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MenuItem from '../../components/MenuItem/MenuItem';
 import { productData, responsive } from "../../components/MenuItem/data";
+import Rocket from '../../components/Rocket/Rocket';
 import './MenuPage.scss';
+
+// import Menucard from '../../components/Menucard/Menucard';
 
 function MenuPage() {
 
@@ -25,6 +28,12 @@ function MenuPage() {
             <Carousel showDots={true} responsive={responsive}>
                 {product}
             </Carousel>
+        </div>
+        <div>
+            <Rocket />
+        </div>
+        <div className='menucard'>
+            {/* <Menucard /> */}
         </div>
 
     </div>
