@@ -47,14 +47,14 @@
 - Alan AI is used to integrate a voice assistant into the application.
 - Navigation in the web app can be done using voice commands.
 
-### <img src="https://img.icons8.com/icon/ONpoTkSjQXY2/qr-code.gif" width="30px" />&ensp;QR Coded Menu
+### <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-emT4O8JVoNM6mjlP0REdCnDZPYcfch7K9Q&usqp=CAU" width="30px" />&ensp;QR Coded Menu
 - We provide a single-scan service at our restaurant. 
 - Customers can now use the application by boarding the rocket by scanning the QR code that is attached.
 
-### <img src="https://icons8.com/icon/cxbCBS9adIMd/shocker-emoji.gif" width="30px" />&ensp;Food Recommendation based on Emotions
+### <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbCYjz5QoD-eoHqSlKVsHfGySeKoqACUxCkA&usqp=CAU" width="30px" />&ensp;Food Recommendation based on Emotions
 - Welcome to the first restaurant on Mars, where you can order food based on your current mood.
 
-### <img src="https://icons8.com/icon/0pVwACd7biaT/expensive-price" width="30px" />&ensp;Payment with GPay
+### <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwhE3p2fHaYHlO2lfMug3gU8CMEnZ7XbrY1g&usqp=CAU" width="30px" />&ensp;Payment with GPay
 - Secure Payment Gateway
 
 #### Commands that can be used
