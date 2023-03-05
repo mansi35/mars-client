@@ -5,7 +5,7 @@ const cartReducer = (state = [], action) => {
       return [
         ...state,
         {
-          name: action.payload,
+          ...action.payload,
           qty: 1,
         },
       ];

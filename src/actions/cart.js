@@ -1,4 +1,5 @@
 export const addFoodItem =(data)=>{
+    console.log(data);
     return {type :'ADD_ITEM', payload : data}
 }
 export const fetchFoodItem =(data) =>{

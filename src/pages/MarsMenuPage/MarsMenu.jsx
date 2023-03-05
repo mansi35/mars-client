@@ -42,6 +42,7 @@ const MarsMenu = () => {
     name: "Oxygen Vape",
     price: "$19.99",
     description: "Generous way to provide oxygen",
+    url: "../../assets/Oxygen_vape.png",
   });
 
   function handleClick(item) {
@@ -49,16 +50,12 @@ const MarsMenu = () => {
     //console.log(item);
   }
 
-  function handleClick(item) {
-    setselectedItem(item);
-    console.log(item);
-  }
   return (
     <div className="MenuPage">
       <div className="carousel2">
-        {/* <div>
+        <div>
         <h1 style={{color: "white", zIndex: "100", width:"1000px"}}>Menu</h1>
-        </div> */}
+        </div>
         <Slider {...settings}>
           {productData.map((item) => {
             return (

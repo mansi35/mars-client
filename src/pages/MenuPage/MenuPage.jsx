@@ -45,17 +45,13 @@ const MenuPage = () => {
     name: "Brownie",
     price: "$19.99",
     description: "Sweet cake with chocolaty texture",
-        })
+    url:'../../assets/Brownie.png'
+   })
     
         function handleClick(item) {
             setselectedItem(item);
             //console.log(item);
         }
-
-  function handleClick(item) {
-    setselectedItem(item);
-    console.log(item);
-  }
   return (
     <div className="MenuPage">
       <div className="carousel2">
