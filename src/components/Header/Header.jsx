@@ -54,7 +54,7 @@ function Header(props) {
   return (
     <div className="header">
       <div className="logo">
-        <img src={logo} alt="" />
+        <Link to="/"><img src={logo} alt="" /></Link>
       </div>
       <div className={props.visible}>
         <div className="search-bar">
