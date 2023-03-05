@@ -1,9 +1,10 @@
 .offerCard {
   position: relative;
+  backdrop-filter: blur(1px);
   color: #ffffff;
   background: linear-gradient(90deg, #1A1A1A 12.41%, rgba(26, 26, 26, 0.9) 43.09%, rgba(26, 26, 26, 0) 136.66%);
   border-radius: 8px;
-  height: 400px;
+  height: 300px;
 
   .offerCard__bg {
     height: auto;
@@ -13,6 +14,12 @@
     position: relative;
     border-radius: 8px;
     height: 100%;
+  }
+
+  img{
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
   }
 
   .offerCard__imagetext {

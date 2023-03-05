@@ -1,5 +1,5 @@
 import React from "react";
-import './Menuitem.scss';
+// import './Menuitem.scss';
 
 export default function MenuItem(props) {
 

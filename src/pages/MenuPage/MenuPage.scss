@@ -1,13 +1,20 @@
-.carousel {
+.carousel2 {
     z-index: 2;
-    margin-top: 120px;
+    margin-top: 40vh;
     margin-left: 5%;
 }
 
 .Menupage {
+    display: flex;
+    justify-content: flex-start;
     top: 0;
     height: 60vh;
     width: 60vw;
+    z-index: 9999999;
     background-color: black;
     backdrop-filter: blur(10px);
+}
+
+.slick-slider.slick-initialized{
+    width: 60vw;
 }

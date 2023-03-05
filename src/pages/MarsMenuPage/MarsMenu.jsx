@@ -1,45 +1,83 @@
-import React from 'react'
-// import Background from '../../components/Background/Background';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import MenuItem from '../../components/MenuItem/MenuItem';
+import { React, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { productData, responsive } from "../../components/MenuItem/data";
-import Rocket from '../../components/Rocket/Rocket';
-import '../MenuPage/MenuPage.scss';
+import OfferCard from "../../components/OfferCard/OfferCard";
+import Rocket from "../../components/Rocket/Rocket";
+import "../MenuPage/MenuPage.scss";
 
-// import Menucard from '../../components/Menucard/Menucard';
+const MarsMenu = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  };
 
-function MarsMenu() {
+  const [selectedItem, setselectedItem] = useState({
+    name: "Oxygen Vape",
+    price: "$19.99",
+    description: "Generous way to provide oxygen",
+  });
 
-    const product = productData.map((item) => (
-        <div className='menu'>
-        <MenuItem
-          name={item.name}
-          url={item.imageurl}
-          price={item.price}
-          description={item.description}
-        />
-        </div>
-      ));
-    
+  function handleClick(item) {
+    setselectedItem(item);
+    //console.log(item);
+  }
+
+  function handleClick(item) {
+    setselectedItem(item);
+    console.log(item);
+  }
   return (
-    <div className="Menupage">
-        {/* <Background /> */}
-        <div className='carousel'>
-            <h1>Menu</h1>
-            <Carousel showDots={true} responsive={responsive}>
-                {product}
-            </Carousel>
-        </div>
-        <div>
-            <Rocket />
-        </div>
-        <div className='menucard'>
-            {/* <Menucard /> */}
-        </div>
-
+    <div className="MenuPage">
+      <div className="carousel2">
+        {/* <div>
+        <h1 style={{color: "white", zIndex: "100", width:"1000px"}}>Menu</h1>
+        </div> */}
+        <Slider {...settings}>
+          {productData.map((item) => {
+            return (
+              <OfferCard
+                click={handleClick}
+                name={item.name}
+                url={item.imageurl}
+                price={item.price}
+                description={item.description}
+              />
+            );
+          })}
+        </Slider>
+      </div>
+      <div>
+        <Rocket selectedItem={selectedItem} />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default MarsMenu
+export default MarsMenu;

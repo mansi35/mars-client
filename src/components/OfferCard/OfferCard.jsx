@@ -3,7 +3,7 @@ import './OfferCard.scss';
 
 function OfferCard({ click, name, url, price,description }) {
   return (
-    <div className="offerCard" onClick={click({name,description,price})}>
+    <div className="offerCard" onClick={()=>{click({name,description,price})}}>
       <div className="offerCard__bg">
         <img src={url}/>
       </div>
