@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Dialog } from '@mui/material';
+import { GoogleLogin } from 'react-google-login';
 import Input from '../Input/Input';
 import googlelogin from '../../images/googlelogin.svg';
 import { signin, signup } from '../../actions/auth';
 import './Auth.scss';
+import { AUTH } from '../../constants/actionTypes';
 
 function Auth({ open, setOpen }) {
   const initialState = {
@@ -34,9 +36,28 @@ function Auth({ open, setOpen }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    dispatch(signup(formData, navigate));
+    if (formData.confirmPassword) {
+      dispatch(signup(formData, navigate));
+    } else {
+      dispatch(signin(formData, navigate));
+    }
     handleClose();
   };
+
+  const googleSuccess = async (res) => {
+    const result = res?.profileObj;
+    const token = res?.tokenId;
+
+    try {
+      dispatch({ type: AUTH, data: { result, token } });
+
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const googleError = () => console.log('Google Sign In was unsuccessful. Try again later');
 
   return (
     <Dialog
@@ -75,12 +96,20 @@ function Auth({ open, setOpen }) {
             {' '}
             With
           </p>
-          <button type="button" className="auth__google">
-            <img src={googlelogin} alt="Login with Google" />
-            {isSignUp ? 'Signup' : 'Login'}
-            {' '}
-            with Google
-          </button>
+          <GoogleLogin
+            clientId="506995339520-77kuiakka8g9pd6g5sadd70gatmssveb.apps.googleusercontent.com"
+            render={(renderProps) => (
+              <button type="button" onClick={renderProps.onClick} disabled={renderProps.disabled} className="auth__google">
+                <img src={googlelogin} alt="Login with Google" />
+                {isSignUp ? 'Signup' : 'Login'}
+                {' '}
+                with Google
+              </button>
+            )}
+            onSuccess={googleSuccess}
+            onFailure={googleError}
+            cookiePolicy="single_host_origin"
+          />
           <p>
             by proceeding, you agree to gosafejourney’s
             {' '}
