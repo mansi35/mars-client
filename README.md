@@ -46,7 +46,7 @@ This web app is my version of a collaboration app that helps your team stay orga
 - Alan AI is used to integrate a voice assistant into the application.
 - Navigation in the web app can be done using voice commands.
 
-### <img src=https://icons8.com/icon/SYgYbjsHSLcP/qr-code" width="30px" />&ensp;QR Coded Menu
+### <img src=https://icons8.com/icon/SYgYbjsHSLcP/qr-code.png" width="30px" />&ensp;QR Coded Menu
 - We provide a single-scan service at our restaurant. Customers can now use the application by boarding the rocket by scanning the QR code that is attached.
 
 #### Commands that can be used
