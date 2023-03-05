@@ -1,5 +1,5 @@
 # DAAWAT-E-MARS
-This web app is my version of a collaboration app that helps your team stay organized and have conversations—all in one place. The main objective is to provide a feeling of working in-office while working remotely with co-workers and friends. You can visit the website on the following URL: https://teams-clone-client.netlify.app
+This web app is my version of a collaboration app that helps your team stay organized and have conversations—all in one place. The main objective is to provide a feeling of working in-office while working remotely with co-workers and friends. You can visit the restraunt on the following URL: 
 
 ## Technology Stack
 <div>
@@ -8,7 +8,6 @@ This web app is my version of a collaboration app that helps your team stay orga
         <code><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="5%" /></code>
         <code><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="5%" /></code>
         <code><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="5%"/></code>
-        <code><img src="https://g.foolcdn.com/art/companylogos/square/api.png" width="5%"/></code>
         <code><img src="https://cdn.worldvectorlogo.com/logos/socket-io.svg" width="5%" /></code>
         <code><img src="https://img.icons8.com/color/64/000000/git.png" width="5%"/></code>
       </p>
@@ -43,11 +42,19 @@ This web app is my version of a collaboration app that helps your team stay orga
 - The calendar after successful login would be an empty one.
 
 ### <img src="https://img.icons8.com/ios-glyphs/30/3498DB/voice-presentation--v2.gif" width="30px" />&ensp;Voice Assistant
+- Use our voice navigation feature to have a contact-free experience if you don't want to be bothered by anyone, like a waiter.
 - Alan AI is used to integrate a voice assistant into the application.
 - Navigation in the web app can be done using voice commands.
 
-### <img src=https://icons8.com/icon/SYgYbjsHSLcP/qr-code.png" width="30px" />&ensp;QR Coded Menu
-- We provide a single-scan service at our restaurant. Customers can now use the application by boarding the rocket by scanning the QR code that is attached.
+### <img src="https://icons8.com/icon/ONpoTkSjQXY2/qr-code" width="30px" />&ensp;QR Coded Menu
+- We provide a single-scan service at our restaurant. 
+- Customers can now use the application by boarding the rocket by scanning the QR code that is attached.
+
+### <img src="https://icons8.com/icon/cxbCBS9adIMd/shocker-emoji" width="30px" />&ensp;Food Recommendation based on Emotions
+- Welcome to the first restaurant on Mars, where you can order food based on your current mood.
+
+### <img src="https://icons8.com/icon/0pVwACd7biaT/expensive-price" width="30px" />&ensp;Payment with GPay
+- Secure Payment Gateway
 
 #### Commands that can be used
 - All simple conversations
