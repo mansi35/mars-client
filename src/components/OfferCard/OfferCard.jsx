@@ -1,16 +1,15 @@
 import React from 'react';
-import Background from '../Background/Background';
 import './OfferCard.scss';
 
-function OfferCard({ image }) {
+function OfferCard({ click, name, url, price,description }) {
   return (
-    <div className="offerCard">
+    <div className="offerCard" onClick={click({name,description,price})}>
       <div className="offerCard__bg">
-        <Background />
+        <img src={url}/>
       </div>
       <div className="offerCard__imagetext">
         <div>
-          <h3>North Indian</h3>
+          <h3>{name}</h3>
         </div>
       </div>
     </div>

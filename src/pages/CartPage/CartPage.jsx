@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { useSelector } from 'react-redux'
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
@@ -16,7 +17,9 @@ const darkTheme = createTheme({
 
 const CartPage = () => {
   const [slot, setSlot] = React.useState("1");
+  const cartItems = useSelector(state => state.cart);
 
+  console.log(cartItems);
   const handleChange = (event) => {
     setSlot(event.target.value);
   };

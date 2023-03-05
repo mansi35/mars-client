@@ -43,7 +43,7 @@ export const productData = [{
     {
         id: 3,
         imageurl: Ice_cream,
-        name: "Ice_cream",
+        name: "Ice cream",
         price: "$99.99",
         description: "Cold & refreshing",
     },

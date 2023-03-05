@@ -11,6 +11,7 @@ import logo from "../../assets/Logo.png"
 function Header(props) {
   const [openAuth, setOpenAuth] = useState(false);
   const handleOpen = () => setOpenAuth(true);
+  const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem('profile')))
 
   return (
     <div className="header">
@@ -24,9 +25,15 @@ function Header(props) {
       </div>
       </div>
       <div className="icons">
-        <Link to="/cart"><ShoppingCartIcon className="icon"/></Link> 
+        <Link to="/cart" style={{color: "white"}}><ShoppingCartIcon className="icon"/></Link> 
         <FavoriteBorderIcon className="icon"/>
-        <AccountCircleIcon className="icon" onClick={handleOpen}/>
+        {currentUser ? <AccountCircleIcon className="icon"/> : 
+        (
+            <div>
+              <button style={{fontSize:"18px", backgroundColor: "#1FBCFF", color: "white", borderRadius: "7px", cursor: "pointer"}} onClick={handleOpen}>Sign In</button>
+            </div>
+        )}
+        
       </div>
       <Auth open={openAuth} setOpen={setOpenAuth} />
     </div>
