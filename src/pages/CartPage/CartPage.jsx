@@ -34,6 +34,14 @@ const CartPage = () => {
     return p;
   }
 
+  // if(price()===0){
+  //   return <div className="cartpage">
+  //     <div className="cartpage-no-items">
+  //       You Have No Items in the Cart
+  //     </div>
+  //   </div>
+  // }
+
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />

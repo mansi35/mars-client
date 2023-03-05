@@ -51,29 +51,33 @@ const MarsMenu = () => {
   }
 
   return (
-    <div className="MenuPage">
-      <div className="carousel2">
-        <div>
+    <>
+      <h1 style={{ marginTop: "100px", marginBottom: "-200px", marginLeft: "30px", backdropFilter:"blur(1px)", color: "white", fontSize: "100px"}}> Mars Menu </h1>
+      <div className="MenuPage">
+        <div className="carousel2">
+          {/* <div>
         <h1 style={{color: "white", zIndex: "100", width:"1000px"}}>Menu</h1>
+        </div> */}
+          <Slider {...settings}>
+            {productData.map((item) => {
+              return (
+                <OfferCard
+                  key={item.name}
+                  click={handleClick}
+                  name={item.name}
+                  url={item.imageurl}
+                  price={item.price}
+                  description={item.description}
+                />
+              );
+            })}
+          </Slider>
         </div>
-        <Slider {...settings}>
-          {productData.map((item) => {
-            return (
-              <OfferCard
-                click={handleClick}
-                name={item.name}
-                url={item.imageurl}
-                price={item.price}
-                description={item.description}
-              />
-            );
-          })}
-        </Slider>
+        <div>
+          <Rocket selectedItem={selectedItem} />
+        </div>
       </div>
-      <div>
-        <Rocket selectedItem={selectedItem} />
-      </div>
-    </div>
+    </>
   );
 };
 
