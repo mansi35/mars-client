@@ -1,5 +1,5 @@
 # DAAWAT-E-MARS
-An interactive in-restaurant application that provides a seamless experience and is outfitted with the best features available, including a voice assistant for easy interface navigation, emotion-based food recommendations, a secure payment gateway, and single QR scanning. You can visit the restraunt on the following URL: 
+This web app is my version of a collaboration app that helps your team stay organized and have conversations—all in one place. The main objective is to provide a feeling of working in-office while working remotely with co-workers and friends. You can visit the restraunt on the following URL: https://mars-client-seven.vercel.app/
 
 ## Technology Stack
 <div>
@@ -14,25 +14,25 @@ An interactive in-restaurant application that provides a seamless experience and
 </div>
 
 - Frontend is implemented using React JS.
-- Backend of the projec is implemented using Node JS.
+- Backend of the project is implemented using Node JS.
 - MongoDB is used as a NoSQL database.
 - Alan AI is used for building voice assisstance .
 - Git is used for version control.
+- Flask Restful API is used for suggesting food based on the mood.
 
 ## Folder Structure
-- The server code is present in the `server` folder of the root directory
-- front-end of the project is present inside the `client` directory
-- all the individual pages can be found inside `client/pages` directory
-- all react components can be found inside `client/components` directory
+- front-end of the project is present in this repository
+- all the individual pages can be found inside `src/pages` directory
+- all react components can be found inside `src/components` directory
 
 ## Features and Functionalities
 <div align="center">
   
-|                                           |                                        |
-|-------------------------------------------|----------------------------------------|
-| 1. Login with Email and Password          | 4.  Voice Assistant                    |
-| 2. Single-scan service with QR Co         | 5.  Introduction of Order Sequencing   |
-| 3. Food recommendation based on emotions  | 6.  Secured Payment Gateway            |
+|                                             |                                        |
+|-------------------------------------------  |----------------------------------------|
+| 1. Login with Email and Password            | 4.  Voice Assistant                    |
+| 2. Single-scan service with QR Code         | 5.  Introduction of Order Sequencing   |
+| 3. Food recommendation based on emotions    | 6.  Secured Payment Gateway            |
 </div>
 
 ### <img src="https://img.icons8.com/color/48/000000/gmail--v2.gif" width="30px" />&ensp;Login with Email and Password
@@ -46,11 +46,11 @@ An interactive in-restaurant application that provides a seamless experience and
 - Alan AI is used to integrate a voice assistant into the application.
 - Navigation in the web app can be done using voice commands.
 
-### <img src="https://icons8.com/icon/ONpoTkSjQXY2/qr-code" width="30px" />&ensp;QR Coded Menu
+### <img src="https://img.icons8.com/icon/ONpoTkSjQXY2/qr-code.gif" width="30px" />&ensp;QR Coded Menu
 - We provide a single-scan service at our restaurant. 
 - Customers can now use the application by boarding the rocket by scanning the QR code that is attached.
 
-### <img src="https://icons8.com/icon/cxbCBS9adIMd/shocker-emoji" width="30px" />&ensp;Food Recommendation based on Emotions
+### <img src="https://icons8.com/icon/cxbCBS9adIMd/shocker-emoji.gif" width="30px" />&ensp;Food Recommendation based on Emotions
 - Welcome to the first restaurant on Mars, where you can order food based on your current mood.
 
 ### <img src="https://icons8.com/icon/0pVwACd7biaT/expensive-price" width="30px" />&ensp;Payment with GPay
