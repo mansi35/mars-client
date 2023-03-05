@@ -1,5 +1,5 @@
 # DAAWAT-E-MARS
-This web app is my version of a collaboration app that helps your team stay organized and have conversations—all in one place. The main objective is to provide a feeling of working in-office while working remotely with co-workers and friends. You can visit the restraunt on the following URL: 
+An interactive in-restaurant application that provides a seamless experience and is outfitted with the best features available, including a voice assistant for easy interface navigation, emotion-based food recommendations, a secure payment gateway, and single QR scanning. You can visit the restraunt on the following URL: 
 
 ## Technology Stack
 <div>
