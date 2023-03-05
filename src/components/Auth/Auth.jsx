@@ -92,7 +92,7 @@ function Auth({ open, setOpen }) {
           </p>
           <center className="auth__switchMode">
             {isSignUp ? (
-              <p style={{ color: "white" }}>
+              <p style={{ color: "white" }} >
                 Already have an Account?
                 {' '}
                 <span onClick={() => setIsSignUp(false)}>Sign in here</span>
