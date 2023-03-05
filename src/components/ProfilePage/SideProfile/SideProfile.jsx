@@ -8,11 +8,11 @@ function SideProfile() {
     <div className="sideProfile">
       <div className="sideProfile__content">
         <div className="sideProfile__top">
-          <h1>SS</h1>
+          <h1>MS</h1>
         </div>
         <div className="sideProfile__bottom">
           <div className="sideProfile__name">
-            <h4>Sarfaraz Ali Syed</h4>
+            <h4>Mansi Sharma</h4>
             <h6>Personal Profile</h6>
           </div>
           <div className="sideProfile__profile">

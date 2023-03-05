@@ -24,7 +24,7 @@ function ProfileInfo() {
         <div className="profileInfo__name">
           <div className="profileInfo__fields__content">
             <h6>Name</h6>
-            <p>Sarfaraz Ali Syed</p>
+            <p>Mansi Sharma</p>
           </div>
         </div>
         <div className="profileInfo__seperator" />

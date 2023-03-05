@@ -50,7 +50,7 @@ function Header(props) {
     }
     setCurrentUser(JSON.parse(localStorage.getItem('profile')));
     // eslint-disable-next-line
-  }, [location]);
+  }, [currentUser, location]);
   return (
     <div className="header">
       <div className="logo">
@@ -80,7 +80,7 @@ function Header(props) {
           ) :
           (
             <div>
-              <button style={{ fontSize: "18px", backgroundColor: "#1FBCFF", color: "white", borderRadius: "7px", cursor: "pointer" }} onClick={handleOpen} >Sign In</button>
+              <button style={{ fontSize: "18px", backgroundColor: "#1FBCFF", color: "white", borderRadius: "7px", cursor: "pointer" }} onClick={handleOpen} >Sign In/Sign Up</button>
             </div>
           )}
 

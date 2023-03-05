@@ -23,7 +23,7 @@ function LoginDetails() {
           <div className="loginDetails__emails__content">
             <h6>Email ID</h6>
             <div className="loginDetails__add">
-              <h6>sarfarazalisyed2001@gmail.com</h6>
+              <h6>mansi.isha.mansi@gmail.com</h6>
             </div>
           </div>
           <p>Verify your email</p>

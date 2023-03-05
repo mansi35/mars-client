@@ -81,7 +81,7 @@ function Auth({ open, setOpen }) {
           <span style={{ color: "white" }}>Email</span>
           <Input name="email" placeholder="Enter email" value={formData.email} handleChange={handleChange} type="email" />
           <span style={{ color: "white" }}>Password</span>
-          <Input name="password" placeholder="Enter your password" style={{ backgroundColor: "white" }} value={formData.password} handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
+          <Input name="password" placeholder="Enter your password" style={{ color: "#ffffff" }} value={formData.password} handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
           {isSignUp && (
             <>
               <span style={{ color: "white" }}>Confirm Password</span>
