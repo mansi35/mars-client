@@ -1,5 +1,5 @@
 # DAAWAT-E-MARS
-- This web app is my version of a collaboration app that helps your team stay organized and have conversations—all in one place. The main objective is to provide a feeling of working in-office while working remotely with co-workers and friends. You can visit the restraunt on the following URL: https://mars-client-seven.vercel.app/ 
+- An interactive in-restaurant application that provides a seamless experience and is outfitted with the best features available, including a voice assistant for easy interface navigation, emotion-based food recommendations, a secure payment gateway, and single QR scanning. You can visit the restraunt on the following URL: https://mars-client-seven.vercel.app/ 
 - PPT Link: https://www.canva.com/design/DAFcRwQ0mrs/xhG-YdRMu3zDSL0krUeKww/view?utm_content=DAFcRwQ0mrs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Technology Stack
