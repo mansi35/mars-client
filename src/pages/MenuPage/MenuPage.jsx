@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,7 +8,7 @@ import {
 } from "../../components/MenuItem/EarthDataItems";
 import OfferCard from "../../components/OfferCard/OfferCard";
 import Rocket from "../../components/Rocket/Rocket";
-import "./MenuPage.scss"
+import "./MenuPage.scss";
 
 const MenuPage = () => {
   const settings = {
@@ -45,37 +45,50 @@ const MenuPage = () => {
     name: "Brownie",
     price: "$19.99",
     description: "Sweet cake with chocolaty texture",
-    url:'../../assets/Brownie.png'
-   })
-    
-        function handleClick(item) {
-            setselectedItem(item);
-            //console.log(item);
-        }
+    url: "../../assets/Brownie.png",
+  });
+
+  function handleClick(item) {
+    setselectedItem(item);
+    //console.log(item);
+  }
   return (
-    <div className="MenuPage">
-      <div className="carousel2">
-        <h1>Menu</h1>
-        <Slider {...settings}>
-          {productData.map((item) => {
-            return (
-              <OfferCard
-                click={
-                  handleClick
-                }
-                name={item.name}
-                url={item.imageurl}
-                price={item.price}
-                description={item.description}
-              />
-            );
-          })}
-        </Slider>
+    <>
+      <h1
+        style={{
+          marginTop: "100px",
+          marginBottom: "-200px",
+          marginLeft: "30px",
+          backdropFilter: "blur(1px)",
+          color: "white",
+          fontSize: "100px",
+        }}
+      >
+        {" "}
+        Earth Menu{" "}
+      </h1>
+      <div className="MenuPage">
+        <div className="carousel2">
+          <h1>Menu</h1>
+          <Slider {...settings}>
+            {productData.map((item) => {
+              return (
+                <OfferCard
+                  click={handleClick}
+                  name={item.name}
+                  url={item.imageurl}
+                  price={item.price}
+                  description={item.description}
+                />
+              );
+            })}
+          </Slider>
+        </div>
+        <div>
+          <Rocket selectedItem={selectedItem} />
+        </div>
       </div>
-      <div>
- <Rocket selectedItem={selectedItem} />
-  </div>
-    </div>
+    </>
   );
 };
 
