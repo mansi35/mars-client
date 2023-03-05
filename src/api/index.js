@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+// const API = axios.create({ baseURL: 'http://localhost:5000' });
 const MLAPI = axios.create({ baseURL: 'https://comfort-food-predictor.onrender.com/food' })
-// const API = axios.create({ baseURL: 'https://mars-server-x1ib.onrender.com' });
+const API = axios.create({ baseURL: 'https://mars-server-x1ib.onrender.com' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
