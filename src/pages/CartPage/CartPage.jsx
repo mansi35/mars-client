@@ -24,6 +24,15 @@ const CartPage = () => {
     setSlot(event.target.value);
   };
 
+  const price = ()=>{
+    let p=0;
+    cartItems.forEach((item)=>{
+      p+=item.price.slice(1)*item.qty;
+    })
+
+    return p;
+  }
+
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
@@ -44,14 +53,13 @@ const CartPage = () => {
           </FormControl>
         </div>
         <div className="cart-items">
-          <CardCart Aslots={slot}/>
-          <CardCart Aslots={slot}/>
-          <CardCart Aslots={slot}/>
-          <CardCart Aslots={slot}/>
-          <CardCart Aslots={slot}/>
+          {cartItems.map((item)=>{
+             return <CardCart Aslots={slot} item={item}/>
+          })}
         </div>
 
         <div className="payment-div">
+          <p>Total Price: ${price()}</p>
           <button className="pay-btn">PROCEED TO PAY</button>
         </div>
       </div>

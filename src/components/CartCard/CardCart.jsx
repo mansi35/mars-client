@@ -10,7 +10,7 @@ import { useCart } from "../../context/CartContext";
 import marsRestaurant from "../../images/marsRestaurant.jpg";
 import "./styles.scss";
 
-const CardCart = ({ Aslots }) => {
+const CardCart = ({ Aslots, item }) => {
   const [quantity, setQuantity] = useState(0);
   const [slot, setSlot] = useState(1);
 
@@ -30,40 +30,43 @@ const CardCart = ({ Aslots }) => {
     });
   }
 
-
   return (
     <div className="cartCard">
       <div className="imgs-details">
-        <img src={marsRestaurant} alt="abc" />
+        <img src={item.url} alt="abc" />
         <div className="item-details">
-          <div className="name">Marsian Cocktail</div>
-          <p className="price">$400</p>
-          <div className="btn-flex">
-            <IconButton aria-label="delete" onClick={decreaseQty}>
+          <div>
+            <div className="name">{item.name}</div>
+            <p className="price">{item.price}</p>
+          </div>
+          <div>
+            {/* <IconButton aria-label="delete" onClick={decreaseQty}>
               <RemoveRoundedIcon />
-            </IconButton>
-            <p>{quantity}</p>
-            <IconButton aria-label="delete" onClick={increaseQty}>
+            </IconButton> */}
+            <p className="qtyp">Quantity: {item.qty}</p>
+            {/* <IconButton aria-label="delete" onClick={increaseQty}>
               <AddRoundedIcon />
-            </IconButton>
+            </IconButton> */}
           </div>
         </div>
       </div>
       <div className="qty-price">
-        <p>$800</p>
-        {Aslots!=="1" && <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-          <InputLabel id="demo-simple-select-filled-label">Slot</InputLabel>
-          <Select
-            labelId="demo-simple-select-filled-label"
-            id="demo-simple-select-filled"
-            value={slot}
-            onChange={handleChange}
-          >
-            {Aslots.split("").map((item) => (
-              <MenuItem value={item}>{item}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>}
+        <p>${item.price.slice(1) * item.qty}</p>
+        {Aslots !== "1" && (
+          <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+            <InputLabel id="demo-simple-select-filled-label">Slot</InputLabel>
+            <Select
+              labelId="demo-simple-select-filled-label"
+              id="demo-simple-select-filled"
+              value={slot}
+              onChange={handleChange}
+            >
+              {Aslots.split("").map((item) => (
+                <MenuItem value={item}>{item}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        )}
       </div>
     </div>
   );
