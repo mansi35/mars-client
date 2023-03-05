@@ -1,7 +1,9 @@
 import React from 'react';
 import './Rocket.scss';
+// import { productData, responsive } from "../../components/MenuItem/data";
+// import { productData, responsive } from "../../components/MenuItem/EarthDataItems";
 
-function Rocket() {
+function Rocket({selectedItem}) {
   return (
     <div class="rocket">
         <div class="rocket-body">
@@ -18,12 +20,11 @@ function Rocket() {
             <li></li>
             <li></li>
             <li>
-                <p>Name</p>
-                <p>Description</p>
-                <p>Calories</p>
+                <p>{selectedItem?.name}</p>
+                <p>{selectedItem?.description}</p>
+                <p>{selectedItem?.price}</p>
                 <p>Add to Cart</p>
             </li>
-
         </ul>
         <ul class="star">
             <li></li>
