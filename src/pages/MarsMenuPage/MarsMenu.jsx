@@ -12,12 +12,14 @@ import '../MenuPage/MenuPage.scss';
 function MarsMenu() {
 
     const product = productData.map((item) => (
+        <div className='menu'>
         <MenuItem
           name={item.name}
           url={item.imageurl}
           price={item.price}
           description={item.description}
         />
+        </div>
       ));
     
   return (
