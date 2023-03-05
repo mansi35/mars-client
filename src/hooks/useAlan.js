@@ -22,8 +22,9 @@ const UseAlan = () => {
     }
   }, [alanInstance])
 
-  const predict = useCallback((payload) => {
-    const suggestions = getMenuSuggestion(payload);
+  const predict = useCallback(async ({ detail: payload }) => {
+    const response = await fetch(`https://comfort-food-predictor.onrender.com/food/${payload}`);
+    const suggestions = await response.json();
     console.log(suggestions)
     alanInstance.playText(`Here are some suggestions based on your mood that you can try, first one is ${suggestions[0]}, second one is ${suggestions[1]} and third one is ${suggestions[2]}`);
   }, [alanInstance])
