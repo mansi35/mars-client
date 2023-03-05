@@ -30,7 +30,7 @@ function App() {
           <Alan />
           <div className="App__content">
             <Routes>
-              <Route exact path="/" element={<MenuPage />} />
+              <Route exact path="/" element={<Home />} />
               <Route exact path="/cart" element={<CartPage />} />
               <Route exact path="/cuisines" element={<CuisineSelector />} />
               <Route exact path="/menu" element={<MenuPage />} />
