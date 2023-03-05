@@ -13,6 +13,7 @@ const initStore = () => {
 
   store.subscribe(throttle(() => {
     saveState({
+      cart: store.getState().cart,
     });
   }, 1000));
 
