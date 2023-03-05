@@ -2,6 +2,7 @@ import React from "react";
 import CardCart from "../../components/CartCard/CardCart";
 import "./styles.scss";
 import MenuItem from "@mui/material/MenuItem";
+import Tooltip from '@mui/material/Tooltip';
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
@@ -46,6 +47,7 @@ const CartPage = () => {
       <CssBaseline />
       <div className="cartpage">
         <div className="select-schedule">
+        <Tooltip placement="left" title="Make orders in slots to get your orders in gap of 20-30 Martian minuites">
           <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id="demo-simple-select-filled-label">Slots</InputLabel>
             <Select
@@ -59,6 +61,7 @@ const CartPage = () => {
               <MenuItem value={"123"}>Three</MenuItem>
             </Select>
           </FormControl>
+          </Tooltip>
         </div>
         <div className="cart-items">
           {cartItems.map((item)=>{
