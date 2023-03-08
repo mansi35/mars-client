@@ -1,34 +1,29 @@
-import { React, useState, useEffect } from "react";
-import IconButton from "@mui/material/IconButton";
-import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
-import AddRoundedIcon from "@mui/icons-material/AddRounded";
+import { React, useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { useCart } from "../../context/CartContext";
-import marsRestaurant from "../../images/marsRestaurant.jpg";
 import "./styles.scss";
 
 const CardCart = ({ Aslots, item }) => {
-  const [quantity, setQuantity] = useState(0);
+  // const [quantity, setQuantity] = useState(0);
   const [slot, setSlot] = useState(1);
 
   const handleChange = (event) => {
     setSlot(event.target.value);
   };
 
-  function increaseQty() {
-    setQuantity((prev) => {
-      return prev + 1;
-    });
-  }
+  // function increaseQty() {
+  //   setQuantity((prev) => {
+  //     return prev + 1;
+  //   });
+  // }
 
-  function decreaseQty() {
-    setQuantity((prev) => {
-      return prev - 1;
-    });
-  }
+  // function decreaseQty() {
+  //   setQuantity((prev) => {
+  //     return prev - 1;
+  //   });
+  // }
 
   return (
     <div className="cartCard">

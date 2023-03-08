@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { ReactComponent as MyProfileIcon } from '../../images/myProfileIcon.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import decode from 'jwt-decode';

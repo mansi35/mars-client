@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { productData, responsive } from "../../components/MenuItem/data";
+import { productData } from "../../components/MenuItem/data";
 import OfferCard from "../../components/OfferCard/OfferCard";
 import Rocket from "../../components/Rocket/Rocket";
 import "../MenuPage/MenuPage.scss";
@@ -52,7 +52,7 @@ const MarsMenu = () => {
 
   return (
     <>
-      <h1 style={{ marginTop: "100px", marginBottom: "-200px", marginLeft: "30px", backdropFilter:"blur(1px)", color: "white", fontSize: "100px"}}> Mars Menu </h1>
+      <h1 style={{ marginTop: "100px", marginBottom: "-200px", marginLeft: "30px", backdropFilter: "blur(1px)", color: "white", fontSize: "100px" }}> Mars Menu </h1>
       <div className="MenuPage">
         <div className="carousel2">
           {/* <div>

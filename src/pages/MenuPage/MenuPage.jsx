@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
   productData,
-  responsive,
 } from "../../components/MenuItem/EarthDataItems";
 import OfferCard from "../../components/OfferCard/OfferCard";
 import Rocket from "../../components/Rocket/Rocket";
