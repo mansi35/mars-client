@@ -1062,7 +1062,8 @@
 
 .home .solar_systm .planet.mercury {
   background: url("https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg");
-  box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px rgba(188, 143, 127, 0.6);
+  // box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9;
+  box-shadow: inset 0 -590px 150px #000, inset 0 0 130px 40px hsl(184deg 45% 85% / 60%), inset 0 0 23px 4px hsl(176deg 45% 85% / 60%), 0 -10px 130px hsl(180deg 31% 62% / 60%);
 }
 
 .home .solar_systm .planet.venus {
